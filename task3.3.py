@@ -1,6 +1,4 @@
 line_to_find = ('20', '20552', '3')
-#line_to_find = [(int(i) for i in input().split()]
-print(line_to_find)
 stats_dict = {}
 n = len(line_to_find)
 with open('stats.csv') as f:
@@ -11,7 +9,5 @@ with open('stats.csv') as f:
         else:
             print('недостаточно числа столбцов для вычислений')
             break
-if n < len(line):
-    for i in stats_dict:
-        cost = stats_dict[line_to_find]
-    print(cost)
+cost = stats_dict[line_to_find]
+print(cost)
